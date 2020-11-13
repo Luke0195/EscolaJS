@@ -3,6 +3,6 @@ import homeRoutes from './homeRoutes';
 
 const routes = Router();
 
-routes.use('/home', homeRoutes);
+routes.use('/alunos', homeRoutes);
 
 export default routes;
