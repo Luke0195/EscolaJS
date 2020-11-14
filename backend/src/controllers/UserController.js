@@ -39,8 +39,7 @@ class UserController {
 
   async update(request, response) {
     try {
-      const { id } = request.params;
-      const findUser = await User.findByPk(id);
+      const findUser = await User.findByPk(request.userId);
       if (!findUser) {
         response.json({ message: 'Não foi possivel encontrar o usuário com esse Id' });
       }
@@ -53,12 +52,7 @@ class UserController {
   }
 
   async delete(request, response) {
-    const { id } = request.params;
-    if (!id) {
-      response.status(400).json({ message: 'Id invalido' });
-    }
-
-    const findUser = await User.findByPk(id);
+    const findUser = await User.findByPk(request.userId);
     if (!findUser) {
       response.status(400).json({ message: 'Não foi possivel encontrar o usuário com esse id' });
     }
