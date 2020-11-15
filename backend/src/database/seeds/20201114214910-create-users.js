@@ -4,28 +4,36 @@ module.exports = {
   up: async (queryInterface) => {
     await queryInterface.bulkInsert('users', [
       {
-        nome: 'Robert Garcia',
-        email: 'robertgarcia@kof.com.br',
-        password_hash: await bcryptjs.hash('4124124124', 8),
+        nome: ' Terry  Bogard',
+        email: 'terrybogard@kof.com.br',
+        password_hash: await bcryptjs.hash('kof94', 8),
         created_at: new Date(),
         updated_at: new Date(),
       },
 
       {
-        nome: 'Wilson Guerra',
-        email: 'wilsonG@gmail.com',
-        password_hash: await bcryptjs.hash('9191919191', 8),
+        nome: ' Rugal Bernstein',
+        email: 'rugalbernstein@kof.com.br',
+        password_hash: await bcryptjs.hash('apelao', 8),
         created_at: new Date(),
         updated_at: new Date(),
       },
 
       {
-        nome: 'Mario Word',
-        email: 'marioworld@mario.com.br',
-        password_hash: await bcryptjs.hash('303030', 8),
+        nome: ' João Inácio',
+        email: 'joaoinacio@rocketseat.com.br',
+        password_hash: await bcryptjs.hash('birobirobiro', 8),
         created_at: new Date(),
         updated_at: new Date(),
       },
+      {
+        nome: 'Thiago Lima',
+        email: 'thiagoLima@rocketseat.com.br',
+        password_hash: await bcryptjs.hash('capita', 8),
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+
     ], {});
   },
 
