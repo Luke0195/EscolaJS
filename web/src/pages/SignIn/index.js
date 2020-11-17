@@ -11,6 +11,8 @@ export default function SignIn() {
           <small> Oie</small>
           <p> Lorem pisum </p>
         </Title>
+        <p> shfiausguasguasoigoiaso</p>
+        <button type="submit"> Enviar</button>
       </Container>
     </>
   );
