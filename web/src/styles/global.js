@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { shade } from 'polished';
 import { primayDarkColor, primaryColor } from '../config/color';
 
 export default createGlobalStyle`
@@ -33,14 +34,18 @@ button{
   color: #fff;
   padding: 10px 20px;
   border-radius:4px;
+  transition: background 0.5s ease-out;
+}
 
+button:hover{
+  background: ${shade(0.2, '#C3073F')}
 }
 `;
 
 export const Container = styled.section`
   width: 100%;
-  max-width: 700px;
+  max-width: 360px;
   background-color: #fff;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px;
 `;
