@@ -8,7 +8,8 @@ export default createGlobalStyle`
   padding:0;
   margin:0;
   outline:0;
-  box-sizing:border-box
+  box-sizing:border-box;
+  font-family: 'Roboto';
 }
 
 html,body, #root{

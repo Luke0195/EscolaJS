@@ -18,4 +18,8 @@ export const Nav = styled.header`
     display: flex;
     justify-content: space-between;
   }
+
+  svg {
+    color: #fff;
+  }
 `;

@@ -1,13 +1,16 @@
 import React from 'react';
-import SignInPage from './pages/SignIn';
+import { BrowserRouter } from 'react-router-dom';
 import GlobalStyles from './styles/global';
 import HeaderComponent from './components/Header';
+import Routes from './routes';
 
 function App() {
   return (
     <>
-      <HeaderComponent />
-      <SignInPage />
+      <BrowserRouter>
+        <HeaderComponent />
+        <Routes />
+      </BrowserRouter>
       <GlobalStyles />
     </>
   );
